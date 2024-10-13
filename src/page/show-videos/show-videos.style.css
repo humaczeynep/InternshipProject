@@ -1,0 +1,293 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 60px;
+    background-color: #ccc;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.search-box input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.search-box button {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.menu {
+    margin-right: auto;
+}
+
+.videocam {
+    margin-right: 20px;
+}
+
+.notifications {
+    margin-left: 20px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #121212;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #121212;
+    cursor: pointer;
+}
+
+.account :hover {
+    background-color: rgb(225, 221, 214);
+    font-weight: bold;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    background: #ccc;
+    color: #fff;
+    transition: left 0.3s;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar .close {
+    display: block;
+    text-align: right;
+    cursor: pointer;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    border: 1px solid beige;
+    border-radius: 20px;
+    background-color: darkgray;
+    color: black;
+}
+
+.sidebar ul li :hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(71, 69, 69);
+}
+
+.link {
+    text-decoration: none;
+    color: #121212;
+}
+
+.detail {
+    text-decoration: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 60px 200px 0 200px;   
+}
+
+.video {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(237, 235, 235);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.video:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-weight: bold;
+    margin: 10px 0;
+    color: brown;
+    font-size: 10px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.description {
+    color: #121212;
+    font-size: 15px !important;
+    line-height: 1.5;
+    text-align: center;
+    max-height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+
+button {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(188, 188, 188);
+    color: rgba(0, 0, 0, 0.486);
+    margin-top: 3px !important;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode button {
+    background-color: #333333;
+    color: black;
+}
+
+.dark-mode .content .sidebar.open {
+    background-color: #303030;
+}
+
+.dark-mode .video {
+    background-color: #303030;
+    color: #ccc;
+}
+
+.dark-mode .video .title {
+    color: rgb(182, 193, 126);
+}
+
+.dark-mode .video .description {
+    color: #ccc;
+}
+
+.dark-mode .video button {
+    background-color: #bababa;
+}
+
+.dark-mode .login {
+    color: #121212;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#login * {
+    box-sizing: border-box;
+}
+
+#login {
+    margin: 100px auto;
+    max-width: 400px;
+    padding: 30px;
+    border: 1px solid black;
+    background-color: rgb(195, 193, 193);
+    border-radius: 10px;
+}
+
+#register * {
+    box-sizing: border-box;
+}
+
+#register {
+    margin: 100px auto;
+    max-width: 400px;
+    padding: 30px;
+    border: 1px solid black;
+    background-color: rgb(195, 193, 193);
+    border-radius: 10px;
+}
+
+form button {
+    padding: 5px;
+    background-color: rgb(235, 235, 232);
+    border-radius: 10px;
+    color: #121212;
+}
+
+form label {
+    display: block;
+    margin: 20px 0 10px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
